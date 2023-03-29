@@ -14,6 +14,10 @@
 
 }
 
+/* -------------------------------------------------------------------------- */
+/*                                    Index                                   */
+/* -------------------------------------------------------------------------- */
+
 .body {
     color: var(--main-text-color);
 }
@@ -21,6 +25,11 @@
 /* Global list styles */
 .list {
     list-style: none;
+}
+
+/* Global link styles */
+a {
+    text-decoration: none;
 }
 
 /* Logo */
@@ -31,7 +40,7 @@
     color: var(--title-color);
 }
 
-/* Site nav, contacts */
+/* Site nav*/
 .site-nav .link {
     color: var(--title-color);
 }
@@ -40,9 +49,24 @@
     color: var(--second-focus-color);
 }
 
+/* Contacts */
+.contacts .link {
+    color: var(--main-text-color)
+}
+.contacts .link:hover,
+.link:focus {
+    color: var(--second-focus-color)
+}
+
 /* Hero */
 .hero-title {
     color: var(--main-white-color);
+}
+
+/* Global button styles*/
+.button {
+    color: var(--main-white-color);
+    background-color: var(--main-focus-color);
 }
 
 /* Global section styles */
@@ -66,4 +90,13 @@
 }
 .footer-text {
     color: var(--footer-white-color)
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  Portfolio                                 */
+/* -------------------------------------------------------------------------- */
+
+/* Work examples */
+.examples-list .title {
+    color: var(--title-color)
 }
