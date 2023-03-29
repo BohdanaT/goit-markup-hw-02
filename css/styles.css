@@ -1,0 +1,69 @@
+/* main text color #434455; */
+/* title color #2E2F42; */
+/* hero text #FFFFFF; */
+/* secondary light color #F4F4FD; */
+/* logo color #4D5AE5; */
+
+:root {
+    --main-text-color: #434455;
+    --title-color: #2E2F42;
+    --main-white-color: #FFFFFF;
+    --footer-white-color: #F4F4FD;
+    --main-focus-color: #4D5AE5;
+    --second-focus-color: #404BBF;
+
+}
+
+.body {
+    color: var(--main-text-color);
+}
+
+/* Global list styles */
+.list {
+    list-style: none;
+}
+
+/* Logo */
+.logo-web {
+    color: var(--main-focus-color);
+}
+.head-logo-studio {
+    color: var(--title-color);
+}
+
+/* Site nav, contacts */
+.site-nav .link {
+    color: var(--title-color);
+}
+.site-nav .link:hover,
+.link:focus {
+    color: var(--second-focus-color);
+}
+
+/* Hero */
+.hero-title {
+    color: var(--main-white-color);
+}
+
+/* Global section styles */
+.section-title {
+    color: var(--title-color);
+}
+
+/* Benefits */
+.benefits-list .title {
+    color: var(--title-color);
+}
+
+/* Team */
+.team-list .title {
+    color: var(--title-color)
+}
+
+/* Footer */
+.foot-logo-studio {
+    color: var(--footer-white-color)
+}
+.footer-text {
+    color: var(--footer-white-color)
+}
