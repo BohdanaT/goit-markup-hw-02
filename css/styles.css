@@ -22,7 +22,8 @@
 /* -------------------------------------------------------------------------- */
 body {
     font-family: "Roboto", sans-serif;
-    color: var(--text-color)
+    color: var(--text-color);
+    background-color: var(--white-background);
 }
 
 /* Global link styles */
@@ -37,6 +38,8 @@ body {
 
 /* Global button styles*/
 .button {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.04em;
     line-height: 1.5;
@@ -50,7 +53,7 @@ body {
 .section-title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.1;
+    line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
@@ -109,6 +112,9 @@ body {
 }
 
 /* Contacts */
+.address {
+    font-style: normal;
+}
 .contacts .link {
     font-style: normal;
     line-height: 1.5;
@@ -135,6 +141,12 @@ body {
 .hero .button:hover,
 .button:focus {
     background-color: var(--pressed-state-color)
+}
+
+/* Benefits */
+.text {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 /* Team */
