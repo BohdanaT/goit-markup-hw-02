@@ -89,6 +89,12 @@ body {
     color: var(--dark-color);
 }
 
+/* Global text styles */
+.text {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
 /* Global footer styles */
 .footer {
     background-color: var(--dark-color);
@@ -143,11 +149,6 @@ body {
     background-color: var(--pressed-state-color)
 }
 
-/* Benefits */
-.text {
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-}
 
 /* Team */
 .team-section {
