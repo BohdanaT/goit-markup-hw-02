@@ -9,7 +9,7 @@
 :root {
     --text-color: #434455;
     --dark-color: #2E2F42;
-    --white-background: #FFFFFF;
+    --white-color: #FFFFFF;
     --cloud-color: #F4F4FD;
     --cornflower-accent: #E7E9FC;
     --primary-brand: #4D5AE5;
@@ -20,10 +20,12 @@
 /* -------------------------------------------------------------------------- */
 /*                                    Global styles                           */
 /* -------------------------------------------------------------------------- */
+
 body {
     font-family: "Roboto", sans-serif;
     color: var(--text-color);
-    background-color: var(--white-background);
+    background-color: var(--white-color);
+    /* перенести letter-spacing 0.02em сюди? */
 }
 
 /* Global link styles */
@@ -38,15 +40,12 @@ body {
 
 /* Global button styles*/
 .button {
-    font-family: "Roboto", sans-serif;
+    font-family: inherit;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.04em;
     line-height: 1.5;
-    cursor: pointer;
-    color: var(--white-background);
-    background-color: var(--primary-brand);
-    
+    cursor: pointer;    
 }
 
 /* Global section styles */
@@ -54,9 +53,9 @@ body {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
-    text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    text-align: center;
     color: var(--dark-color);
 }
 
@@ -66,9 +65,9 @@ body {
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
-    align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    align-items: center;
     color: var(--primary-brand);
 }
 
@@ -113,6 +112,7 @@ body {
     letter-spacing: 0.02em;
     color: var(--dark-color);
 }
+
 .site-nav .link:hover,
 .link:focus {
     color: var(--pressed-state-color);
@@ -122,13 +122,14 @@ body {
 .address {
     font-style: normal;
 }
-.contacts .link {
-    font-style: normal;
+
+.address .link {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-color)
 }
-.contacts .link:hover,
+
+.address .link:hover,
 .link:focus {
     color: var(--pressed-state-color)
 }
@@ -137,27 +138,35 @@ body {
 .hero {
     background-color: var(--dark-color);
 }
+
 .hero-title {
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
-    color: var(--white-background);
+    color: var(--white-color);
 }
+
+.hero .button {
+    color: var(--white-color);
+    background-color: var(--primary-brand);
+}
+
 .hero .button:hover,
 .button:focus {
     background-color: var(--pressed-state-color)
 }
 
-
 /* Team */
 .team-section {
     background-color: var(--cloud-color);
 }
+
 .team-card {
-    background-color: var(--white-background);
+    background-color: var(--white-color);
 }
+
 .team-list .sub-title {
     text-align: center;
 }
@@ -183,11 +192,6 @@ background-color: var(--cloud-color);
 
 .filter-list .button:hover,
 .button:focus {
-    color: var(--white-background);
+    color: var(--white-color);
     background-color: var(--pressed-state-color);
-}
-
-/* Work examples */
-.examples-list .title {
-    color: var(--dark-color)
 }
